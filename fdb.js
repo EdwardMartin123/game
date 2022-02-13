@@ -13,6 +13,24 @@ class Piece { // holds info of the piece's position and number of mines hit
         this.y = row;
         this.minesHit = 0;
     }
+    get x() {
+        return this._x
+    }
+    set x(value) {
+        this._x = value
+    }    
+    get y() {
+        return this._y
+    }
+    set y(value) {
+        this._y = value
+    }
+    get minesHit() {
+        return this._minesHit
+    }
+    set minesHit(value) {
+        this._minesHit = value
+    } 
 }
 
 function movePiece(up, right, piece, board) {
